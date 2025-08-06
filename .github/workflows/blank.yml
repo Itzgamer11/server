@@ -86,8 +86,7 @@ jobs:
           zip -r backup.zip /opt/vps-backup
 
       - name: Upload VPS backup artifact
-    
-    uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: vps-backup
           path: backup.zip
